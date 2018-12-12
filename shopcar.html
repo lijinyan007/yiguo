@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/carts.css">
+</head>
+<body>
+	<div id="headnav">
+			<div class="headnav_con">
+				<div class="left">
+					<ul>
+						<li>欢迎光临易果生鲜！</li>
+						<li class="green">配送至
+							<div class="address_con">
+								<p>请根据您的收货地址选择
+									<a href="#">全国其它城市>></a>
+								</p>
+
+								<h3>热门城市</h3>
+								<ul class="hotcity">
+									<li>上海</li>
+									<li>北京</li>
+									<li>广州</li>
+									<li>天津</li>
+									<li>南京市</li>
+									<li>苏州市</li>
+									<li>昆山市</li>
+									<li>无锡市</li>
+									<li>杭州市</li>
+									<li>宁波市</li>
+								</ul>
+								<ul class="selectcity">
+									<li class="active2">ABCDE</li>
+									<li>FGHIJ</li>
+									<li>KLMNO</li>
+									<li>PQRST</li>
+									<li>UVWXYZ</li>
+								</ul>
+								<div class="city">
+									<div class="city1" style="display: block;">
+										ABCDE
+									</div>
+									<div class="city2">
+										FGHIJ
+									</div>
+									<div class="city3">
+										KLMNO
+									</div>
+									<div class="city4">
+										PQRST
+									</div>
+									<div class="city5">
+										UVWXYZ
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="green drop_down address">
+							上海
+							<b></b>
+						</li>
+					</ul>
+				</div>
+				<ul class="right">
+					<li>
+						<a href="login.html">[登录]</a>
+					</li>
+					<li>
+						<a href="register.html">[注册]</a>
+					</li>
+					<li class="drop_down my">
+						<div class="">
+							<i></i>
+							<a href="#">我的易果</a>
+							<b></b>
+						</div>
+						<ul>
+							<li>
+								<a href="#">我的订单</a>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+							</li>
+							<li>
+								<a href="#">我的收藏</a>
+							</li>
+							<li>
+								<a href="#">我的悠币</a>
+							</li>
+							<li>
+								<a href="#">我的退换货</a>
+							</li>
+							<li>
+								<a href="#">预存款查询</a>
+							</li>
+							<li>
+								<a href="#">立即充值</a>
+							</li>
+						</ul>
+					</li>
+					<li class="drop_down phone">
+						<div>
+							<i></i>
+							<a href="#">手机易果</a>
+							<b></b>
+						</div>
+						<ul>
+							<li><img src="img/index/qrcode_app.jpg" /></li>
+							<li><img src="img/index/qrcode_app.jpg" /></li>
+						</ul>
+					</li>
+					<li class="card">
+						<a href="#">储值卡</a>
+					</li>
+					<li class="gift">
+						<a href="#">礼品兑换券入口</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<div class="header">
+			<div class="wrap">
+				<a class="fl" href="index.html"><img src="img/register/logo.png" /></a>
+				<div class="steps">
+                    <ul>
+                        <li class="on"><b class="b1"></b><span>我的购物车</span></li>
+                        <li><i></i><b class="b2"></b><span>填写订单信息</span></li>
+                        <li><i></i><b class="b3"></b><span>成功提交订单</span></li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+		
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">水果艺术生活</a>
+                </div>
+            </div>
+            <div class="order_content">
+              
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/index/img4.jpg"></a></div>
+                        <div class="list_text"><a href="javascript:;">泰国山竹</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：6*6*6(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_b" class="shopChoice">
+                    <label for="shop_b" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">卷卷旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_4" class="son_check">
+                        <label for="checkbox_4"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/shopcar/9288727905051911_300.jpg"></a></div>
+                        <div class="list_text"><a href="javascript:;">富士山苹果</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：6*6*6(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_5" class="son_check">
+                        <label for="checkbox_5"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/shopcar/9288727905051911_300.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">富士山苹果</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：6*6*6(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    店铺：<a href="javascript:;">卷卷旗舰店</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/shopcar/9288727905051911_300.jpg" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">富士山苹果</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：6*6*6(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="img/shopcar/9288727905051911_300.jpg"></a></div>
+                        <div class="list_text"><a href="javascript:;">富士山苹果</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：6*6*6(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/carts.js"></script> 
+</html>

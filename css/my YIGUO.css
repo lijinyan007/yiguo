@@ -1,0 +1,672 @@
+/*商品分类*/
+/*头部轮播图---start*/
+#classification{
+	position: relative;
+	width: 1200px;
+	height: 38px;
+	border-bottom: 3px solid #008842;
+	margin: 0 auto;
+}
+#classification>ul>li{
+	width: 180px;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 38px;
+	text-align: center;
+}
+.classification{
+	position: absolute;
+	background: #008842;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+}
+.classification ul {
+	z-index: 1000;
+	background: #fff;
+	display: none;
+}
+.classification:hover .classification ul{
+	display: block;
+}
+.classification>ul li{
+	width: 180px;
+	height: 38.5px;
+	text-align: left;
+	font-weight: lighter;
+}
+.classification>ul>li:hover{
+	box-sizing: border-box;
+	width: 200px;
+	border: 1px solid #d8d8d8;
+	border-right: 0px;
+	padding-left: 10px;
+}
+.classification ul li a::before{
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;	
+	float: left;
+	margin-left: 40px;	
+	margin-right: 10px;
+	background-image:url(../img/index/nav-icon.png) ;
+	background-repeat:no-repeat;
+}
+.Importedfruit::before{
+	background-position: 0px 0px;
+}
+.Domesticfruit::before{
+	background-position: -24px 0px;
+}
+.meat::before{
+	background-position: -47px 0px;
+}
+.poultry::before{
+	background-position:-73px 0px;
+}
+.Cookfood::before{
+	background-position: 0px 0px;
+}
+.seafood::before{
+	background-position:-96px 0px;
+}
+.Dairycake::before{
+	background-position: -119px 0px;
+}
+.Vegetables::before{
+	background-position: -144px 0px;
+}
+.fastfood::before{
+	background-position: -168px 0px;
+}
+.graingroceries::before{
+	background-position: -191px 0px;
+}
+.drinks::before{
+	background-position: -216px 0px;
+}
+.gift::before{
+	background-position: -238px 4px;
+}
+#classification .con div{
+	width: 257px;
+	height: 462px;	
+	background: #fff;
+	position: absolute;
+	left: 180px;
+	top:38px;	
+	box-sizing: border-box;
+	padding: 50px;
+	display: none;
+	z-index: 50;
+}
+#classification .con h2{
+	color:#008842;
+	margin-bottom: 20px;
+}
+#classification .con ul li{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+#classification .con ul li a:hover{
+	color: #008842;
+}
+
+/*选项卡内容*/
+#title{
+	width: 1200px;
+	margin: 0 auto;
+}
+#title p{
+	font-size: 12px;
+	padding: 20px 5px;
+	float: left;
+}
+#title p span{
+	color:red;
+	text-decoration: underline;
+}
+
+/*选项卡内容*/
+#details{
+	width: 1200px;
+	margin: 0 auto;
+}
+#selectlist{
+	width: 195px;
+	height: 602px;
+	clear: both;
+	float: left;
+}
+#selectlist>dl{
+	width: 195px;
+	line-height: 30px;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 15px;
+	margin-bottom:-12px;
+	
+}
+#selectlist dl dd ,dt{
+	height: 30px;	
+}
+#selectlist dl dt{
+	font-weight: bold;
+	font-size: 16px;	
+}
+#selectlist dl dd{
+	margin-left: 0px;
+	cursor: pointer;
+}
+#selectlist dl dd.active{
+	color: #008842;
+}
+
+
+/*我的易果*/
+#select_con{
+	width: 942px;
+	box-sizing: border-box;
+	padding:20px;
+	border: 1px solid #e3e6e0;
+	background: #fff;
+	float: left;
+	margin-left: 20px;
+}
+#select_con>.con{
+	display: none;
+}
+#select_con .con .user{
+	height: 122px;
+	border-radius: 122px 0 0 122px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;	
+	box-sizing: border-box;
+	padding: 15px;
+	background:url(../img/myyiguo/user-info-bg.png) no-repeat right top;
+	margin-bottom: 20px;
+}
+#select_con .con .user>p{
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5px;
+	background:url(../img/myyiguo/myjd-bg.png) no-repeat top left;
+	float: left;
+	margin-right: 30px;
+}
+#select_con div .user p img{
+	width: 80px;
+	border-radius: 45px;
+}
+.informatiom{
+	float: left;
+}
+.informatiom p{
+	margin-top: 20px;	
+}
+.account{
+	float: left;
+	margin: 20px 0 0 250px;
+}
+.account p{
+	float: left;
+	margin-right: 40px;
+	text-align: center;
+}
+.account p span{
+	display: block;
+	font-weight: bold;
+	color:red;
+	font-size: 20px;
+}
+.account p button{
+	font-size: 12px;
+	cursor: pointer;
+}
+
+/*我的订单*/
+.order,.shopping{
+	height: 120px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+}
+.order p,.shopping p{
+	position: relative;
+	padding: 10px;
+	background: #d8d8d8;
+	font-size: 18px;
+	font-weight: bold;
+}
+.order p a,.shopping p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	right: 10px;
+}
+
+/*我的优惠券*/
+.con .Coupon{
+	height:250px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .Coupon .conbox div{
+	display: none;
+}
+.con .Coupon>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+}
+.con .Coupon p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	line-height: 30px;
+	right: 10px;
+}
+.con .Coupon p.con{
+	height: 13px;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 20px;
+}
+.con .Coupon p span{
+	display: block;
+	width: 150px;
+	text-align: center;
+	float: left;
+	cursor: pointer;	
+}
+.con .Coupon p span.active2{
+	color: #008842;
+	border-bottom: 3px solid #008842;
+}
+.con .Coupon .conbox p{
+	width: 439px;
+	height: 120px;
+	background: url(../img/myyiguo/coupon-bg.png) no-repeat ;
+	background-size:439px ;
+	border-bottom: 0;
+	margin-right: 0px;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+.con .Coupon .conbox p .money{
+	width: 110px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #f9742e;	
+	margin-left: -10px;
+	text-align: center;
+}
+.con .Coupon .conbox p .money b{
+	display: block;
+	margin-top: 10px;
+}
+.con .Coupon .conbox p span{
+	margin-top: 25px;
+	width: 300px;
+	text-align: left;
+}
+.con .Coupon .conbox div table{
+	width:880px;
+}
+.con .Coupon .conbox div table tr{
+	height: 40px;
+	background: #d8d8d8;
+}
+
+/*我的悠币*//*账户余额*/
+.con .Coin,.con .balance{
+	height:250px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .Coin>p,.con .balance>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.con .Coin p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	line-height: 30px;
+	right: 10px;
+}
+.con .Coin div,.con .balance div{
+	margin-bottom: 30px;
+}
+
+.con .Coin div span{
+	margin-right: 600px;
+}
+.con .balance div span{
+	margin-right: 20px;
+}
+
+.con .balance div p{
+	display: inline-block;
+	margin-right: 580px;
+	width: 72px;
+	height: 28px;
+	background: #008842;
+	text-align: center;
+	line-height: 28px;
+	font-size: 16px;
+	color: #fff;
+}
+.con .Coin table,.con .balance table{
+	width:880px;
+}
+.con .Coin  table tr,.con .balance table tr{
+	height: 40px;
+	background: #d8d8d8;
+}
+/*我的礼品卡*/
+.con .gift{
+	height:250px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .gift>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.con .gift p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	line-height: 30px;
+	right: 10px;
+}
+.con .gift div{
+	margin-bottom: 30px;
+}
+.con .gift div span{
+	margin-right: 650px;
+}
+.con .gift table{
+	width:880px;
+}
+.con .gift  table tr{
+	height: 40px;
+	background: #d8d8d8;
+}
+
+/*我的礼品兑换券*/
+
+.Notice h1{
+	text-align: center;
+}
+.Notice p{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+/*购买过的商品*//*我的收藏*/
+.con .shop,.con .Collection{
+	height:250px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .shop>p,.con .Collection>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.con .shop p a,.con .Collection p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	line-height: 30px;
+	right: 10px;
+}
+.con .shop div input,.con .Collection div input{
+	float: left;
+	margin-right: 30px;
+}
+.con .shop div span,.con .Collection div span{
+	display: inline-block;
+	height: 28px;
+	width: 112px;
+	background: #f14b00;
+	margin-left: 30px;
+	text-align: center;
+	line-height: 28px;
+	color: #fff;
+}
+.con .shop table,.con .Collection table{
+	width:880px;
+	margin-top: 20px;
+}
+.con .shop  table tr,.con .Collection  table tr{
+	height: 40px;
+	background: #d8d8d8;
+}
+
+/*个人资料*/
+.own h2{
+	font-size: 16px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+.own span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+label{
+	display:inline-block;
+	width: 100px;
+	height: 100px;
+}
+.own label img{
+	width: 100px;
+	height: 100px;
+}
+.own .btn{
+	display: none;
+}
+.own a{
+	color: #008842;
+	text-decoration: underline;
+}
+#btn{
+	width: 306px;
+	height: 50px;
+	background: #008842;
+	border: 0;
+	outline: medium;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 50px;	
+}
+
+/*账号安全*//*收货地址管理*//*企业福利入口*//*投诉建议*/
+.con .security,.con .address,.con .enterprise,.con .Complaint{
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .security>p,.con .address>p,.con .enterprise>p,.con .Complaint>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.con .security p:nth-of-type(2){
+	border-bottom: 1px solid #d8d8d8;
+}
+.con .security p img{
+	width: 83px;
+	height: 83px;
+	border-radius: 83px;
+}
+.con .security div {
+	height: 91px;
+	border-bottom:1px solid #d8d8d8;	
+	padding-top: 35px;
+	box-sizing: border-box;
+	padding-left: 100px;
+}
+.con .security div p{
+	width: 180px;
+	font-size: 20px;
+	font-weight: bold;
+	border-right: 1px solid #d8d8d8;
+}
+.con .security div p::before{
+	content: '';
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: url(../img/myyiguo/bg_safe.png) no-repeat 0px 0px;
+	float: left;
+	margin-right: 20px;
+}
+.con .security div span{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	height: 50px;
+	margin-left: 200px;
+	margin-top: -20px;
+	margin-right: 100px;
+}
+.con .security div i{
+	display: block;
+	width: 64px;
+	height: 28px;
+	background: #008842;
+	color: #fff;
+	float: left;
+	margin-top: -30px;
+}
+
+/*收货地址管理*/
+.con .address span{
+	display: block;
+	width: 94px;
+	height: 31px;
+	background: #008842;
+	color: #fff;
+	text-align: center;
+	line-height: 31px;
+}
+
+/*企业福利入口*/
+
+.enterprise h2{
+	font-size: 16px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+.enterprise span{
+	display:inline-block;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 100px;
+	margin-bottom: 30px;
+	text-align: right;	
+}
+.enterprise b{
+	font-size: 14px;
+	font-weight: lighter;
+	border-bottom: 0;
+}
+.enterprise #btn{
+	width: 306px;
+	height: 50px;
+	background: #008842;
+	color: #FFFFFF;
+	line-height: 50px;
+	text-align: center;
+	margin-top:20px;
+}
+/*在线退换货*/
+.con .Return{
+	height:250px;
+	border: 1px solid #D8D8D8;	
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.con .Return .conbox div{
+	display: none;
+}
+.con .Return>p{
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #008842;
+	font-size: 18px;
+	font-weight: bold;
+}
+.con .Return p a{
+	position: absolute;
+	font-size: 12px;
+	color: #008842;
+	line-height: 30px;
+	right: 10px;
+}
+.con .Return p.con{
+	height: 37px;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 20px;
+}
+.con .Return p span{
+	display: block;
+	width: 150px;
+	text-align: center;
+	float: left;
+	cursor: pointer;	
+}
+.con .Return p span.active3{
+	color: #008842;
+	border-bottom: 3px solid #008842;
+}
+.con .Return table{
+	width:880px;
+	margin-top: 20px;
+}
+.con .Return  table tr{
+	height: 40px;
+	background: #d8d8d8;
+}
+.con .Return  div span{
+	margin-right: 200px;
+}
+/*投诉建议*/
+.Complaint h5 a{ 
+	color:blue;
+}
+/*//退换货*/
+.Return .con{
+	display: block;
+}

@@ -1,0 +1,1351 @@
+/*头部----start*/
+
+
+/*头部固定导航栏---start*/
+
+#headnav {
+	/*z-index:3;*/
+	width: 100%;
+	height: 30px;
+	background: #f7f9f8;
+}
+
+.headnav_con {
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.headnav_con li {
+	float: left;
+	margin-right: 10px;
+}
+
+.headnav_con .left {
+	float: left;
+}
+
+.headnav_con .green {
+	position: relative;
+	width: 48px;
+	color: #008842;
+	z-index: 12;
+}
+
+.headnav_con .green .address_con {
+	position: absolute;
+	background: #fff;
+	width: 482px;
+	left: 0;
+	top: 30px;
+	border: 3px solid #008842;
+	color: #000;
+}
+
+.headnav_con .green .address_con {
+	color: #727272;
+	display: none;
+}
+
+.headnav_con .green .address_con>p {
+	height: 30px;
+	background: #d8d8d8;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+
+.headnav_con .green .address_con p a {
+	float: right;
+	color: #008842;
+}
+
+.headnav_con .right {
+	float: right;
+}
+
+.headnav_con .drop_down div b,
+.headnav_con .drop_down b {
+	display: block;
+	width: 8px;
+	height: 4px;
+	background: url(../img/index/header-img.png) no-repeat 0px 0px;
+	float: right;
+	margin-top: 13px;
+	margin-right: 5px;
+}
+
+.green:hover .address_con {
+	display: block;
+}
+
+.address_con h3 {
+	font-size: 14px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.hotcity {
+	margin-bottom: 30px;
+}
+
+.address_con ul {
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.address_con .selectcity {
+	width: 100%;
+	margin-left: 20px;
+}
+
+.address_con .selectcity li {
+	width: 80px;
+	margin-right: 0;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d8d8d8;
+}
+
+.selectcity li.active2 {
+	border: 1px solid #d8d8d8;
+	border-bottom-width: 0;
+}
+
+.address_con .city div {
+	margin-left: 30px;
+	width: 300px;
+	display: none;
+}
+
+.drop_down {
+	position: relative;
+	width: 100px;
+	height: 30px;
+	margin-top: -1px;
+}
+
+.drop_down div {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	z-index: 12;
+}
+
+.active1 {
+	position: absolute;
+	height: 30px;
+	width: 100px;
+	box-sizing: border-box;
+	border: 1px solid #008842;
+	border-bottom: 0px;
+	background: #fff;
+	z-index: 2;
+}
+
+.my ul,
+.phone ul {
+	width: 120px;
+	position: absolute;
+	top: 29px;
+	left: 0;
+	background: #fff;
+	border: 1px solid #008842;
+	z-index: 11;
+	display: none;
+}
+
+.phone ul {
+	box-sizing: border-box;
+	padding: 10px 5px 0px;
+	clear: both;
+}
+
+.phone ul li img {
+	width: 100px;
+	height: 100px;
+}
+
+.my ul li a:hover {
+	color: #008842;
+}
+
+.headnav_con .my div i,
+.headnav_con .phone div i,
+.headnav_con .card::before,
+.headnav_con .gift::before {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.headnav_con .my div i {
+	background: url(../img/index/header-img.png) no-repeat -40px 0px;
+}
+
+.headnav_con .phone div i {
+	background: url(../img/index/header-img.png) no-repeat -63px 0px;
+}
+
+.headnav_con .card::before {
+	width: 22px;
+	background: url(../img/index/header-img.png) no-repeat -147px 0px;
+}
+
+.headnav_con .gift::before {
+	background: url(../img/index/header-img.png) no-repeat -86px 0px;
+}
+
+.headnav_con li.active {
+	color: #fff;
+	background: #008842;
+}
+
+
+/*头部固定导航栏---end*/
+
+
+/*头部动态导航栏---start*/
+
+#Dynamicnav {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 78px;
+	background: #e0e0e0;
+}
+
+#Dynamicnav .Dynamicnav_con {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 78px;
+}
+
+.Dynamicnav_con img,
+.Dynamicnav_con .search {
+	float: left;
+}
+
+.Dynamicnav_con img {
+	margin-top: 1%;
+	margin-right: 145px;
+}
+
+.Dynamicnav_con .search {
+	position: relative;
+	width: 528px;
+	height: 28px;
+	border: 1px solid #008842;
+	margin-top: 1%;
+}
+
+.Dynamicnav_con .search input {
+	position: absolute;
+	width: 445px;
+	height: 26px;
+	top: 0;
+	left: 0;
+	border: 0;
+	outline: medium;
+	background: transparent;
+	padding: 0 10px;
+}
+
+.Dynamicnav_con .search span {
+	position: absolute;
+	display: block;
+	width: 81px;
+	height: 28px;
+	background: #008842;
+	top: 0;
+	right: 0;
+	line-height: 28px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+.Dynamicnav_con ul {
+	clear: both;
+	position: absolute;
+	left: 291px;
+	top: 28px;
+}
+
+.Dynamicnav_con ul li {
+	margin-right: 5px;
+	float: left;
+}
+
+.Dynamicnav_con ul li a {
+	color: #008842;
+}
+
+.ShoppingCart {
+	position: relative;
+	width: 172px;
+	height: 42px;
+	background: #fff;
+	border: 1px solid #008842;
+	float: right;
+	margin-top: 1.5%;
+	font-size: 25px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #008842;
+}
+.ShoppingCart p a{
+	color: #008842;
+	
+}
+.ShoppingCart p a::before {
+	content: '0';
+	display: block;
+	width: 28px;
+	height: 20px;
+	float: left;
+	background: url(../img/index/header-img.png) no-repeat -111px 0px;
+	margin-top: 7.5%;
+	margin-left: 20px;
+	margin-right: 15px;
+	font-size: 14px;
+	line-height: 12px;
+	text-align: center;
+}
+
+.ShoppingCart_con {
+	display: none;
+	position: absolute;
+	width: 380px;
+	height: 120px;
+	background: #fff;
+	border: 1px solid #008842;
+	right: -1px;
+	text-align: center;
+	line-height: 120px;
+}
+
+.ShoppingCart_con img {
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -81px;
+	z-index: 2;
+}
+
+.ShoppingCart_con span {
+	position: absolute;
+	font-size: 12px;
+	color: #000000;
+	font-weight: lighter;
+	z-index: 3;
+	left: 25%;
+}
+
+.ShoppingCart:hover .ShoppingCart_con {
+	display: block;
+}
+
+
+/*头部动态导航栏---end*/
+
+
+/*头部轮播图---start*/
+
+#banner {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: lemonchiffon;
+}
+
+#banner .Sowing {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+
+#banner .Sowing img {
+	position: absolute;
+	height: 500px;
+}
+
+#banner .banner_navbox {
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	margin-left: -600px;
+	top: 0;
+}
+
+.banner_navbox .classification {
+	position: absolute;
+	width: 180px;
+	height: 38px;
+	background: #008842;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	top: 0;
+	
+}
+
+.banner_navbox .classification ul {
+	background: #fff;
+	/*display: none;*/
+}
+
+.banner_navbox .classification:hover .classification ul {
+	display: block;
+}
+
+.banner_navbox>ul li {
+	width: 180px;
+	height: 38.5px;
+	text-align: left;
+}
+
+.banner_navbox ul li ul li:hover {
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	border-right: 0px;
+}
+
+.banner_navbox .classification ul li a::before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 40px;
+	margin-right: 10px;
+	background-image: url(../img/index/nav-icon.png);
+	background-repeat: no-repeat;
+}
+
+.Importedfruit::before {
+	background-position: 0px 0px;
+}
+
+.Domesticfruit::before {
+	background-position: -24px 0px;
+}
+
+.meat::before {
+	background-position: -47px 0px;
+}
+
+.poultry::before {
+	background-position: -73px 0px;
+}
+
+.Cookfood::before {
+	background-position: 0px 0px;
+}
+
+.seafood::before {
+	background-position: -96px 0px;
+}
+
+.Dairycake::before {
+	background-position: -119px 0px;
+}
+
+.Vegetables::before {
+	background-position: -144px 0px;
+}
+
+.fastfood::before {
+	background-position: -168px 0px;
+}
+
+.graingroceries::before {
+	background-position: -191px 0px;
+}
+
+.drinks::before {
+	background-position: -216px 0px;
+}
+
+.gift::before {
+	background-position: -238px 0px;
+}
+/*.banner_navbox{
+	width: 500px;
+	height: 500px;
+	background: lightcoral;
+}*/
+.banner_navbox .con {}
+
+.banner_navbox .con div {
+	width: 257px;
+	height: 500px;
+	background: #fff;
+	position: absolute;
+	left: 180px;
+	top: 38px;
+	box-sizing: border-box;
+	padding: 50px;
+	display: none;
+}
+
+.banner_navbox .con h2 {
+	color: #008842;
+	margin-bottom: 20px;
+}
+
+.banner_navbox .con ul li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.banner_navbox .con ul li a:hover {
+	color: #008842;
+}
+
+
+/*头部----end*/
+
+
+/*中间内容部分-----start*/
+
+#content {
+	width: 1200px;
+	margin: 0 auto;
+	/*background: lightblue;*/
+}
+
+
+/*特区-----start*/
+
+#Specialarea {
+	width: 1212px;
+	height: 307px;
+	margin-top: 20px;
+	margin-right: 13px;
+}
+
+.Specialarea_plate {
+	position: relative;
+	width: 290px;
+	height: 290px;
+	float: left;
+	margin-right: 13px;
+}
+
+.Specialarea_plate:hover {
+	box-shadow: 0 0 5px 2px #000;
+}
+
+.Specialarea_plate a {
+	display: block;
+}
+
+.Specialarea_plate a img {
+	width: 290px;
+	height: 290px;
+}
+
+.Specialarea_plate a div {
+	position: absolute;
+	width: 270px;
+	height: 57px;
+	margin: 10px;
+	bottom: 0;
+	line-height: 26px;
+	background: #fff;
+	text-align: center;
+}
+
+.Specialarea_plate a div h2 {
+	font-size: 20px;
+}
+
+
+/*特区-----end*/
+
+#Importedfruit,
+#Domesticfruit,
+#seafood,
+#meat,
+#poultry,
+#graingroceries,
+#Dairycake,
+#drinks,
+#Fastfood {
+	height: 500px;
+	margin-bottom: 18px;
+}
+
+.title {
+	margin-bottom: 5px;
+	height: 32px;
+}
+
+.title p {
+	width: 127px;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+#Importedfruit .title p {
+	color: #fc5f3c;
+}
+
+#Domesticfruit .title p {
+	color: #007f4d;
+}
+
+#seafood .title p {
+	color: #45c6ce;
+}
+
+#meat .title p {
+	color: #f0c000;
+}
+
+#poultry .title p {
+	color: #e08683
+}
+
+#graingroceries .title p {
+	color: #b84f00;
+}
+
+#Dairycake .title p {
+	color: #764e00;
+}
+
+#drinks .title p {
+	color: #940606;
+}
+
+#Fastfood .title p {
+	color: #3ca3dc;
+}
+
+.title p::before {
+	display: block;
+	width: 45px;
+	height: 32px;
+	float: left;
+	background-image: url(../img/index/floor_tit_icon.png);
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding-left: 5px;
+	margin-right: 5px;
+	line-height: 32px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#Importedfruit .title p::before {
+	content: 'F1';
+	background-position: 0px 0px;
+}
+
+#Domesticfruit .title p::before {
+	content: 'F2';
+	background-position: -45px 0px;
+}
+
+#seafood .title p::before {
+	content: 'F3';
+	background-position: -183px 0px;
+}
+
+#meat .title p::before {
+	content: 'F4';
+	background-position: -92px 0px;
+}
+
+#poultry .title p::before {
+	content: 'F5';
+	background-position: -138px 0px;
+}
+
+#graingroceries .title p::before {
+	content: 'F6';
+	background-position: -368px 0px;
+}
+
+#Dairycake .title p::before {
+	content: 'F7';
+	background-position: -230px 0px;
+}
+
+#drinks .title p::before {
+	content: 'F8';
+	background-position: -414px 0px;
+}
+
+#Fastfood .title p::before {
+	content: 'F9';
+	background-position: -322px 0px;
+}
+
+.title ul {
+	float: right;
+	line-height: 32px;
+}
+
+.title ul li {
+	float: left;
+}
+
+.title ul li span {
+	margin: 0 5px;
+}
+
+.title ul li a:hover {
+	text-decoration: underline;
+}
+
+.Importedfruit_con ul li,
+.Domesticfruit_con ul li,
+.seafood_con ul li,
+.meat_con ul li,
+.poultry_con ul li,
+.graingroceries_con ul li,
+.Dairycake_con ul li,
+.drinks_con ul li,
+.Fastfood_con ul li {
+	float: left;
+	background: #fff;
+}
+
+.Importedfruit_con .specialarea,
+.Domesticfruit_con .specialarea,
+.seafood_con .specialarea,
+.meat_con .specialarea,
+.poultry_con .specialarea,
+.graingroceries_con .specialarea,
+.Dairycake_con .specialarea,
+.drinks_con .specialarea,
+.Fastfood_con .specialarea {
+	width: 275px;
+	height: 463px;
+}
+
+.Importedfruit_con ul li ul li,
+.Domesticfruit_con ul li ul li,
+.seafood_con ul li ul li,
+.meat_con ul li ul li,
+.poultry_con ul li ul li,
+.graingroceries_con ul li ul li,
+.Dairycake_con ul li ul li,
+.drinks_con ul li ul li,
+.Fastfood_con ul li ul li {
+	position: relative;
+	width: 230px;
+	height: 232px;
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	overflow: hidden;
+}
+
+.Importedfruit_con ul li ul li.wid,
+.Domesticfruit_con ul li ul li.wid,
+.seafood_con ul li ul li.wid,
+.meat_con ul li ul li.wid,
+.poultry_con ul li ul li.wid,
+.graingroceries_con ul li ul li.wid,
+.Dairycake_con ul li ul li.wid,
+.drinks_con ul li ul li.wid,
+.Fastfood_con ul li ul li.wid {
+	width: 460px;
+	height: 232px;
+}
+
+.Importedfruit_con ul li ul li img,
+.Domesticfruit_con ul li ul li img,
+.seafood_con ul li ul li img,
+.meat_con ul li ul li img,
+.poultry_con ul li ul li img,
+.graingroceries_con ul li ul li img,
+.Dairycake_con ul li ul li img,
+.drinks_con ul li ul li img,
+.Fastfood_con ul li ul li img {
+	position: absolute;
+	left: 0;
+	transition: 0.7s;
+}
+
+.Importedfruit_con ul li ul li img:hover,
+.Domesticfruit_con ul li ul li img:hover,
+.seafood_con ul li ul li img:hover,
+.meat_con ul li ul li img:hover,
+.poultry_con ul li ul li img:hover,
+.graingroceries_con ul li ul li img:hover,
+.Dairycake_con ul li ul li img:hover,
+.drinks_con ul li ul li img:hover,
+.Fastfood_con ul li ul li img:hover {
+	transform: translateX(5px);
+}
+
+
+/*分类---start*/
+
+
+/*分类---end*/
+
+
+/*中间内容部分-----end*/
+
+
+/*底部-----start*/
+
+
+/*底部服务项-----start*/
+
+#foot-server {
+	width: 100%;
+	height: 102px;
+	background: #e0e0e0;
+	box-sizing: border-box;
+	padding: 30px 0;
+}
+
+#foot-server ul {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#foot-server ul li {
+	width: 190px;
+	height: 42px;
+	margin-left: 55px;
+	padding-left: 55px;
+	background-image: url(../img/index/footer_service_icon.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#foot-server ul li:nth-of-type(1) {
+	background-position: 0px 0px;
+}
+
+#foot-server ul li:nth-of-type(2) {
+	background-position: 0px -42px;
+}
+
+#foot-server ul li:nth-of-type(3) {
+	background-position: 0px -84px;
+}
+
+#foot-server ul li:nth-of-type(4) {
+	background-position: 0px -128px;
+}
+
+#foot-server ul li h2 {
+	color: #008842;
+	padding-left: 15px;
+	line-height: 25px;
+	border-left: 1px solid #a6a6a6;
+}
+
+#foot-server ul li p {
+	padding-left: 15px;
+	border-left: 1px solid #a6a6a6;
+}
+
+
+/*#foot-server ul li::before{
+	content: '';
+	display: block;
+	width: ;
+	
+}*/
+
+
+/*底部服务项-----end*/
+
+
+/*底部链接----start*/
+
+#foot {
+	width: 100%;
+	height: 413px;
+}
+
+#foot .foot_wrap {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+
+#foot dl {
+	width: 190px;
+	margin-left: 50px;
+	float: left;
+}
+
+#foot dl dt {
+	height: 23px;
+	line-height: 23px;
+	font-size: 14px;
+	text-indent: 40px;
+	background: url(../img/index/footer_icon.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+
+#foot dl.col1 dt {
+	background-position: 20px 0px;
+}
+
+#foot dl.col2 dt {
+	background-position: 20px 0px;
+}
+
+#foot dl.col3 dt {
+	background-position: 20px 0px;
+}
+
+#foot dl.col4 dt {
+	background-position: 20px 0px;
+}
+
+#foot dl.col5 dt {
+	background-position: 20px 0px;
+}
+
+#foot dl dd {
+	border-left: 1px solid #e0e0e0;
+	padding-left: 20px;
+}
+
+#foot dl dd p {
+	height: 22px;
+}
+
+#foot dl dd p a:hover {
+	color: #008842;
+	text-decoration: underline;
+}
+
+#foot .copyright_server {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#foot .copyright_server .server {
+	font-size: 14px;
+	color: #008842;
+	padding: 60px 0 20px;
+}
+
+#foot .copyright_server .copyright,
+.copyright a {
+	color: #717171;
+}
+
+.copyright a:hover {
+	color: #008842;
+}
+
+#foot .copyright_server .copyright p {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.copyright p.img a {
+	display: inline-block;
+	height: 47px;
+}
+
+.copyright a img {
+	height: 47px;
+}
+
+.copyright a.cp {
+	line-height: 47px;
+	margin: 0 5px;
+	vertical-align: top;
+}
+
+.copyright a.cp::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/index/ghs.png) no-repeat;
+	float: left;
+	margin-top: 13px;
+	margin-right: 5px;
+}
+
+
+/*底部链接----end*/
+
+
+/*底部-----end*/
+/*头部轮播图---start*/
+
+#banner {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: lemonchiffon;
+}
+
+#banner .Sowing {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+#banner .Sowing .imglist{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#banner .Sowing .imglist img {
+	position: absolute;
+	height: 700px;
+	width: 1920px;
+	left: -168px;
+	top:-100px;
+}
+#banner .Sowing .spans {
+	width: 500px;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	bottom: 50px;
+	
+}
+#banner .Sowing .spans span{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	display: inline-block;
+	background: #b5b2a8;
+	z-index: 10000;
+}
+#banner .Sowing .spans .active{
+	background: #5aaa16;
+}
+#banner .Sowing .prenext{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -50px;
+}
+#banner .Sowing .prenext #pre,#next{
+	width: 40px;
+	height: 100px;
+	opacity: 0.3;
+	cursor: pointer;
+	background:url(../img/index/slider-btn.png) no-repeat;
+}
+#banner .Sowing .prenext #pre{
+	background-position: 0px 0px;
+	float: left;
+	display:none;
+}
+#banner .Sowing .prenext #next{
+	background-position:-50px 0px;
+	float: right;
+	display:none;
+}
+#banner .banner_navbox {
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	margin-left: -600px;
+	top: 0;
+}
+
+.banner_navbox .classification {
+	position: absolute;
+	width: 180px;
+	height: 38px;
+	background: #008842;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	top: 0;
+	
+}
+
+.banner_navbox .classification ul {
+	background: #fff;
+	display: none;
+}
+
+.banner_navbox .classification:hover .classification ul {
+	display: block;
+}
+
+.banner_navbox>ul li {
+	width: 180px;
+	height: 38.5px;
+	text-align: left;
+}
+
+.banner_navbox ul li ul li:hover {
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	border-right: 0px;
+}
+
+.banner_navbox .classification ul li a::before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 40px;
+	margin-right: 10px;
+	background-image: url(../img/index/nav-icon.png);
+	background-repeat: no-repeat;
+}
+
+.Importedfruit::before {
+	background-position: 0px 0px;
+}
+
+.Domesticfruit::before {
+	background-position: -24px 0px;
+}
+
+.meat::before {
+	background-position: -47px 0px;
+}
+
+.poultry::before {
+	background-position: -73px 0px;
+}
+
+.Cookfood::before {
+	background-position: 0px 0px;
+}
+
+.seafood::before {
+	background-position: -96px 0px;
+}
+
+.Dairycake::before {
+	background-position: -119px 0px;
+}
+
+.Vegetables::before {
+	background-position: -144px 0px;
+}
+
+.fastfood::before {
+	background-position: -168px 0px;
+}
+
+.graingroceries::before {
+	background-position: -191px 0px;
+}
+
+.drinks::before {
+	background-position: -216px 0px;
+}
+
+.gift::before {
+	background-position: -238px 0px;
+}
+.banner_navbox{
+	width: 500px;
+	height: 500px;
+}
+.banner_navbox .con {}
+
+.banner_navbox .con div {
+	width: 257px;
+	height: 500px;
+	background: #fff;
+	position: absolute;
+	left: 180px;
+	top: 38px;
+	box-sizing: border-box;
+	padding: 50px;
+	display: none;
+}
+
+.banner_navbox .con h2 {
+	color: #008842;
+	margin-bottom: 20px;
+}
+
+.banner_navbox .con ul li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.banner_navbox .con ul li a:hover {
+	color: #008842;
+}
+
+
+/*头部----end*/
+
+
+/*回到顶部---start*/
+
+#top_server {
+	position: fixed;
+	bottom: 20px;
+	margin-left: 1410px;
+}
+
+#top_server div {
+	width: 50px;
+	height: 42px;
+	margin-bottom: 10px;
+	background-image: url(../img/index/sidebar.png);
+	background-repeat: no-repeat;
+}
+
+#top_server div.server {
+	background-position: 0px -46px;
+}
+
+#top_server div.server:hover {
+	background-position: -56px -46px;
+}
+
+#top_server div.top {
+	display: none;
+	background-position: 0px 0px;
+}
+
+#top_server div.top:hover {
+	background-position: -56px 0px;
+}
+
+
+/*回到顶部---end*/
+
+
+/*左侧固定菜单---start*/
+
+/*#leftnav {
+	width: 35px;
+	height: 360px;
+	position: fixed;
+	margin-left: 30px;
+	top: 50%;
+	margin-top: -180px;
+}*/
+
+
+/*#leftnav ul li {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-image: url(../img/index/floor_guide.png);
+	background-repeat: no-repeat;
+}
+
+#leftnav ul li span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	t-size: 0px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background: #008842;
+	box-sizing: border-box;
+	padding: 4px;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+
+#leftnav ul li:hover span{
+	opacity: 1;
+}
+.men1{
+	background-position: 0px 0px;
+}
+.men2{
+	background-position: -40px 0px;
+}
+.men3{
+	background-position: -80px 0px;
+}
+.men4{
+	background-position: -120px 0px;
+}
+.men5{
+	background-position: -160px 0px;
+}
+.men6{
+	background-position: -200px 0px;
+}
+.men7{
+	background-position: -240px 0px;
+}
+.men8{
+	background-position: -320px 0px;
+}
+.men9{
+	background-position: -360px 0px;
+}*/
+
+.subnav {
+	width: 40px;
+	height: 360px;
+	position: fixed;
+	margin-left: 135px;
+	top: 50%;
+	margin-top: -180px;
+	display: none;
+}
+
+.subnav li {
+	height: 40px;
+	width: 40px;
+	margin-bottom: 5px;
+	font-size: 0;
+	background: url(../img/index/floor_guide.png) no-repeat;
+}
+
+.subnav li:hover,
+.subnav li.current1,
+.back {
+	border: 1px solid #008842;
+	background: #008842;
+	/* 只有冲突的时候才会出现层叠 */
+	/* 背景颜色 背景图片 背景位置 背景平铺  背景固定 */
+	/* css 层叠样式表 */
+	font-size: 12px;
+	color: #FFFFFF;
+	padding-left: 6px;
+	padding-top: 2px;
+	height: 40px;
+	width: 40px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+
+/*左侧固定菜单---end*/
+

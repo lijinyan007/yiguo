@@ -1,0 +1,137 @@
+body{
+	background: none;
+}
+#banner .banner_navbox {
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	margin-left: -600px;
+	top: 0;
+}
+
+.banner_navbox .classification {
+	position: absolute;
+	width: 180px;
+	height: 38px;
+	background: #008842;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	top: 0;
+	
+}
+
+.banner_navbox .classification ul {
+	background: #fff;
+	display: none;
+}
+
+.banner_navbox .classification:hover .classification ul {
+	display: block;
+}
+
+.banner_navbox>ul li {
+	width: 180px;
+	height: 38.5px;
+	text-align: left;
+}
+
+.banner_navbox ul li ul li:hover {
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	border-right: 0px;
+}
+
+.banner_navbox .classification ul li a::before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 40px;
+	margin-right: 10px;
+	background-image: url(../img/index/nav-icon.png);
+	background-repeat: no-repeat;
+}
+
+.Importedfruit::before {
+	background-position: 0px 0px;
+}
+
+.Domesticfruit::before {
+	background-position: -24px 0px;
+}
+
+.meat::before {
+	background-position: -47px 0px;
+}
+
+.poultry::before {
+	background-position: -73px 0px;
+}
+
+.Cookfood::before {
+	background-position: 0px 0px;
+}
+
+.seafood::before {
+	background-position: -96px 0px;
+}
+
+.Dairycake::before {
+	background-position: -119px 0px;
+}
+
+.Vegetables::before {
+	background-position: -144px 0px;
+}
+
+.fastfood::before {
+	background-position: -168px 0px;
+}
+
+.graingroceries::before {
+	background-position: -191px 0px;
+}
+
+.drinks::before {
+	background-position: -216px 0px;
+}
+
+.gift::before {
+	background-position: -238px 0px;
+}
+.banner_navbox{
+	width: 500px;
+	height: 500px;
+}
+.banner_navbox .con {}
+
+.banner_navbox .con div {
+	width: 257px;
+	height: 500px;
+	background: #fff;
+	position: absolute;
+	left: 180px;
+	top: 38px;
+	box-sizing: border-box;
+	padding: 50px;
+	display: none;
+}
+
+.banner_navbox .con h2 {
+	color: #008842;
+	margin-bottom: 20px;
+}
+
+.banner_navbox .con ul li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.banner_navbox .con ul li a:hover {
+	color: #008842;
+}
+

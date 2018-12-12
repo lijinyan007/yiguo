@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/logreg_header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.idcode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<a class="fl" href="index.html"><img src="img/register/logo.png"/></a>
+				<h2 class="fl">注册</h2>
+			</div>
+		</div>
+		<div class="main">
+			<div class="con">
+				<div class="tip clearfix">
+					<p>我已经注册，现在就<a href="login.html">登录</a></p>
+				</div>
+				<form action="" method="post">
+					<div class="reg">
+					<dl>
+						<dt class="fl">
+							<div class="content">
+								<span class="field-name">图形验证码</span>
+								<input type="text" placeholder="图形验证码" name="" id="verficode_tab1" value="" class="input input-yzm"/>
+								<span id="idcode"></span>
+								<i class="pass-error"></i><span class="erro-text"></span>
+								<!--<span class="gray"  id="ehong-code-tip-ck"  onclick="$.idcode.setCode()">换一张</span>-->
+							</div>
+							<div class="content">
+								<span class="field-name">手机号</span>
+								<input type="text" placeholder="请输入您的手机号" name="" id="phone_mobile" value="" class="input input-phone"/>
+								<i class="pass-error"></i><span class="erro-text"></span>
+							</div>
+							<div class="content">
+								<span class="field-name">手机验证码</span>
+								<input type="text" placeholder="手机验证码" name="" id="phone_verifycode" value="" class="input input-yzm"/>
+								<a href="#" class="get fl">获取验证码</a>
+								<a href="#" class="newget fl">获取验证码</a>
+								<i class="pass-error"></i><span class="erro-text"></span>
+							</div>
+							<div class="content">
+								<span class="field-name">设置密码</span>
+								<input type="password" placeholder="6-20位字母、符号或数字" name="" id="phone_password" value="" class="input input-key"/>
+								<i class="pass-error"></i><span class="erro-text"></span>
+							</div>
+							<div class="content">
+								<span class="field-name">确认密码</span>
+								<input type="password" placeholder="再次输入密码" name="" id="phone_confimpassword" value="" class="input input-key"/>
+								<i class="pass-error"></i><span class="erro-text"></span>
+							</div>
+							<div class="content"> 
+								<span class="field-name">邀请码</span>
+								<input type="text" placeholder="邀请码" name="" id="phone_atcode" value="" class="input input-key"/>
+								<span></span>
+							</div>
+							<div class="checkbox content">
+								<input type="checkbox" name="" id="check" value="" checked="checked"/>
+								<p>我已阅读并同意<a href="#">《易果服务协议》</a></p>
+								<span></span>
+							</div>
+							<div class="reg-btn">
+								<a href="javascript:;">立即注册</a>
+							</div>
+						</dt>
+						<dd class="fr">
+							<img src="img/register/register.png"/>
+						</dd>
+					</dl>
+				</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			
+		</div>
+	</body>
+</html>

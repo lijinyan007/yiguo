@@ -1,0 +1,70 @@
+.con{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.con ul{
+	width:1583px;
+	height: 500px;
+	
+}
+.con ul li p{
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	top: 0px;
+	left: 456px;
+}
+ .banner_navbox {
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	margin-left: -600px;
+	top: 0;
+}
+
+.banner_navbox .classification {
+	position: absolute;
+	width: 180px;
+	height: 38px;
+	background: #008842;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	top: 0;
+	
+}
+
+.banner_navbox .classification ul {
+	background: #fff;
+	/*display: none;*/
+}
+
+.banner_navbox .classification:hover .classification ul {
+	display: block;
+}
+
+.banner_navbox>ul li {
+	width: 180px;
+	height: 38.5px;
+	text-align: left;
+}
+
+.banner_navbox ul li ul li:hover {
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	border-right: 0px;
+}
+
+.banner_navbox .classification ul li a::before {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 40px;
+	margin-right: 10px;
+	background-image: url(../img/index/nav-icon.png);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/classification.css" />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/index.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				//banner部分分类
+				var isok = true;
+				//点击全部分类，分类的隐藏和显示
+				$('.classification').click(function() {
+					console.log(1)
+					if(!isok) {
+						$('.classification ul').hide();
+
+					} else {
+						$('.classification ul').show();
+					}
+					isok = !isok;
+				});
+				if(isok) {
+					//点击隐藏的时候，经过出现
+					$('.classification').mouseenter(function() {
+						$('.classification ul').show();
+						$('body').css({'background-color':'#fff'});
+						$('#iframe',parent.document).css({'width':'180px','z-index':2000});
+					});
+					$('.banner_navbox').mouseleave(function() {
+						$('.classification ul,.banner_navbox .con .main').hide();
+						$('body').css({'background':'none'});
+						$('#iframe',parent.document).css({'width':'500px','z-index':1000});
+					});
+				}
+
+				$('.classification ul li').mouseenter(function() {
+					$(this).css({
+						'padding-left': '5px'
+					});
+					$('.banner_navbox .con .main').eq($(this).index()).show().siblings().hide();
+					$('#iframe',parent.document).css({'width':'500px'});
+
+				});
+				$('.banner_navbox').mouseleave(function() {
+					$('.banner_navbox>.con>.main').each(function(index) {
+						$(this).css({
+							'padding-left': '0px'
+						});
+						$('#iframe',parent.document).css({'width':'180px'});
+						$(this).hide();
+					});
+
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="banner_navbox">
+
+			<ul>
+				<li class="classification" id="classification">全部商品分类▼
+					<ul>
+						<li>
+							<a href="shuiguo.html" class="Importedfruit" target="_parent">进口水果</a>
+						</li>
+						<li>
+							<a href="jinkou.html" class="Domesticfruit" target="_parent">国产水果</a>
+						</li>
+						<li>
+							<a href="roulei.html" class="meat" target="_parent">精选肉类</a>
+						</li>
+						<li>
+							<a href="danlei.html" class="poultry" target="_parent">禽类蛋品</a>
+						</li>
+						<li>
+							<a href="jiheng.html" class="Cookfood" target="_parent">即烹美食</a>
+						</li>
+						<li>
+							<a href="haixian.html" class="seafood" target="_parent">海鲜水产</a>
+						</li>
+						<li>
+							<a href="#" class="Dairycake">乳品糕点</a>
+						</li>
+						<li>
+							<a href="#" class="Vegetables">新鲜蔬菜</a>
+						</li>
+						<li>
+							<a href="#" class="=fastfood">方便进食</a>
+						</li>
+						<li>
+							<a href="#" class="graingroceries">粮油杂货</a>
+						</li>
+						<li>
+							<a href="#" class="drinks">饮料酒水</a>
+						</li>
+						<li>
+							<a href="#" class="gift">礼品礼券</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="con">
+				<div class="main selected">
+					<h2>进口水果</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>国产水果</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>精选肉类</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>禽类蛋品</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>即烹美食</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>海鲜水产</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>乳品糕点</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>新鲜蔬菜</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>方便进食</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>粮油杂货</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>饮料酒水</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+				<div class="main">
+					<h2>礼品礼券</h2>
+					<ul>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+						<li>
+							<a href="#">苹果</a>
+						</li>
+					</ul>
+					<img src="img/index/9570160763248445.png" />
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

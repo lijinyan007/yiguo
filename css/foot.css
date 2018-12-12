@@ -1,0 +1,149 @@
+/*底部-----start*/
+/*底部服务项-----start*/
+#foot-server{
+	width: 100%;
+	height: 102px;
+	background: #e0e0e0;
+	box-sizing: border-box;
+	padding: 30px 0;
+}
+#foot-server ul{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+#foot-server ul li{
+	width: 190px;
+	height: 42px;
+	margin-left: 55px;
+	padding-left:55px ;
+	background-image: url(../img/index/footer_service_icon.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+#foot-server ul li:nth-of-type(1){
+	background-position: 0px 0px ;
+}
+#foot-server ul li:nth-of-type(2){
+	background-position: 0px -42px ;
+}
+#foot-server ul li:nth-of-type(3){
+	background-position: 0px -84px ;
+}
+#foot-server ul li:nth-of-type(4){
+	background-position: 0px -128px;
+}
+#foot-server ul li h2{
+	color:#008842 ;
+	padding-left: 15px;
+	line-height: 25px;
+	border-left: 1px solid #a6a6a6;
+} 
+#foot-server ul li p{
+	padding-left: 15px;
+	border-left: 1px solid #a6a6a6;
+} 
+/*#foot-server ul li::before{
+	content: '';
+	display: block;
+	width: ;
+	
+}*/
+/*底部服务项-----end*/
+
+/*底部链接----start*/
+#foot{
+	width: 100%;
+	height: 413px;
+}
+#foot .foot_wrap{
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+#foot dl{
+	width: 190px;
+	margin-left: 50px;
+	float: left;
+}
+#foot dl dt{
+	height: 23px;
+	line-height: 23px;
+	font-size: 14px;
+	text-indent: 40px;
+	background: url(../img/index/footer_icon.png);
+	background-repeat:no-repeat ;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+#foot dl.col1 dt{
+	background-position: 20px 0px;
+}
+#foot dl.col2 dt{
+	background-position: 20px 0px;
+}
+#foot dl.col3 dt{
+	background-position: 20px 0px;
+}
+#foot dl.col4 dt{
+	background-position: 20px 0px;
+}
+#foot dl.col5 dt{
+	background-position: 20px 0px;
+}
+#foot dl dd{
+	border-left: 1px solid #e0e0e0;
+	padding-left: 20px;
+}
+#foot dl dd p{
+	height: 22px;
+}
+#foot dl dd p a:hover{
+	color: #008842;
+	text-decoration: underline;
+}
+#foot .copyright_server{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+#foot .copyright_server .server{
+	font-size: 14px;
+	color:#008842;
+	padding:60px 0 20px;
+}
+#foot .copyright_server .copyright,.copyright a{
+	color: #717171;
+}
+.copyright a:hover{
+	color: #008842;
+}
+#foot .copyright_server .copyright p{
+	margin-bottom: 5px;
+	text-align: center;
+}
+.copyright p.img a{
+	display:inline-block;
+	height: 47px;
+}
+.copyright a img{
+	height: 47px;
+}
+.copyright a.cp {
+	line-height: 47px;
+	margin: 0 5px;
+	vertical-align: top;
+}
+.copyright a.cp::before{
+	content: '';
+	display: block;
+	width: 20px;
+	height:20px;
+	background: url(../img/index/ghs.png) no-repeat;
+	float: left;
+	margin-top: 13px;
+	margin-right: 5px;
+}
+/*底部链接----end*/
+/*底部-----end*/

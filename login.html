@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/base1.css" />
+		<link rel="stylesheet" type="text/css" href="css/logreg_header.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.idcode.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<a class="fl" href="index.html"><img src="img/register/logo.png" /></a>
+				<h2 class="fl">登录</h2>
+			</div>
+		</div>
+		<div class="main">
+			<div class="con">
+				<div class="left fl">
+					<a href="#"><img src="img/login/9288707397067429.jpg" /></a>
+				</div>
+				<div class="right fl">
+					<div class="title">
+						<h3 class="fl">欢迎登录</h3>
+						<p class="fr">还没有账号？
+							<a href="register.html">立即注册</a>
+						</p>
+					</div>
+					<form action="" method="post">
+						<div>
+							<span class="input-phone-icon">&nbsp;</span>
+							<input type="text" placeholder="邮箱/账号/已验证手机" name="" id="phone_mobile" value="" class="input input-phone" />
+							<span class="pass-error"></span>
+						</div>
+						<div>
+							<span class="input-key-icon">&nbsp;</span>
+							<input type="password" placeholder="密码" name="" id="phone_password" value="" class="input input-key" />
+							<span></span>
+						</div>
+						<div class="change">
+							<span class="input-key-icon">&nbsp;</span>
+							<input type="text" placeholder="验证码" name="" id="verficode_tab1" value="" class="input input-yzm" />
+							<span id="idcode" class="fl"></span>
+							<!--<span class="gray"  id="ehong-code-tip-ck"  onclick="$.idcode.setCode()">换一张</span>-->
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="" id="check" value="" checked="checked" />
+							<span class="fl">自动登录</span>
+							<a href="#" class="fr"> 忘记登录密码？ </a>
+						</div>
+						<div class="login-btn">
+							<a href="javascript:;">立即登录</a>
+						</div>
+						<p class="three">第三方登录</p>
+						<div class="logintool">
+							<a href="#" id="qq"><i></i></a>
+							<a href="#" id="sina"><i></i></a>
+							<a href="#" id="ay"><i></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="Popup">
+			<div class="qq">
+				<p>亲，第三方登录目前仅支持移动端，请拿起手机扫描以下二维码下载易果生鲜APP或关注微信服务号吧！</p>
+				<img src="img/login/code.jpg"></img>
+				<span>x</span>
+			</div>
+		</div>
+		<div class="footer">
+
+		</div>
+	</body>
+
+</html>
